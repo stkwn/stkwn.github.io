@@ -1,0 +1,290 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号 | Moments In Time - 时光序</title><meta name="author" content="Arina"><meta name="copyright" content="Arina"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1 缘起前几天有位朋友对我说,：  你推荐的那个Obsidian软件，我都看不太懂呢，都是一堆术语，Markdown，插件，主题，一看就头大，看完我都不想用了。  这话把我给愣住了。是啊，我太习惯说专业术语了，完全没考虑到新手的感受。 但是如果因为这个原因，就让你错过了这么一款好软件，我觉得实在是太可惜了。 正因如此，我更觉得有必要好好介绍一下Obsidian——因为我自己就是从”排版焦虑症”患者">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号">
+<meta property="og:url" content="http://blog.arina-dev.com/2025/08/16/notes-note05/index.html">
+<meta property="og:site_name" content="Moments In Time - 时光序">
+<meta property="og:description" content="1 缘起前几天有位朋友对我说,：  你推荐的那个Obsidian软件，我都看不太懂呢，都是一堆术语，Markdown，插件，主题，一看就头大，看完我都不想用了。  这话把我给愣住了。是啊，我太习惯说专业术语了，完全没考虑到新手的感受。 但是如果因为这个原因，就让你错过了这么一款好软件，我觉得实在是太可惜了。 正因如此，我更觉得有必要好好介绍一下Obsidian——因为我自己就是从”排版焦虑症”患者">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://blog.arina-dev.com/img/avatar.png">
+<meta property="article:published_time" content="2025-08-16T11:08:59.863Z">
+<meta property="article:modified_time" content="2025-08-16T11:13:27.776Z">
+<meta property="article:author" content="Arina">
+<meta property="article:tag" content="obsidian">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blog.arina-dev.com/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号",
+  "url": "http://blog.arina-dev.com/2025/08/16/notes-note05/",
+  "image": "http://blog.arina-dev.com/img/avatar.png",
+  "datePublished": "2025-08-16T11:08:59.863Z",
+  "dateModified": "2025-08-16T11:13:27.776Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Arina",
+      "url": "http://blog.arina-dev.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://blog.arina-dev.com/2025/08/16/notes-note05/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/notes"><i class="fa-fw fas fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page" href="/categories/life"><i class="fa-fw fas fa-film"></i><span> 生活</span></a></div><div class="menus_item"><a class="site-page" href="/categories/books"><i class="fa-fw fas fa-book-open"></i><span> 读书</span></a></div><div class="menus_item"><a class="site-page" href="/categories/travel"><i class="fa-fw fas fa-map"></i><span> 旅行</span></a></div><div class="menus_item"><a class="site-page" href="/photo"><i class="fa-fw fas fa-image"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/links"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/default_top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo.png" alt="Logo"><span class="site-name">Moments In Time - 时光序</span></a><a class="nav-page-title" href="/"><span class="site-name">Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/notes"><i class="fa-fw fas fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page" href="/categories/life"><i class="fa-fw fas fa-film"></i><span> 生活</span></a></div><div class="menus_item"><a class="site-page" href="/categories/books"><i class="fa-fw fas fa-book-open"></i><span> 读书</span></a></div><div class="menus_item"><a class="site-page" href="/categories/travel"><i class="fa-fw fas fa-map"></i><span> 旅行</span></a></div><div class="menus_item"><a class="site-page" href="/photo"><i class="fa-fw fas fa-image"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/links"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-16T11:08:59.863Z" title="发表于 2025-08-16 21:08:59">2025-08-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-16T11:13:27.776Z" title="更新于 2025-08-16 21:13:27">2025-08-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/notes/">notes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="1-缘起"><a href="#1-缘起" class="headerlink" title="1 缘起"></a>1 缘起</h1><p>前几天有位朋友对我说,：</p>
+<blockquote>
+<p>你推荐的那个Obsidian软件，我都看不太懂呢，都是一堆术语，Markdown，插件，主题，一看就头大，看完我都不想用了。</p>
+</blockquote>
+<p>这话把我给愣住了。是啊，我太习惯说专业术语了，完全没考虑到新手的感受。</p>
+<p><strong>但是如果因为这个原因，就让你错过了这么一款好软件，我觉得实在是太可惜了。</strong></p>
+<p>正因如此，我更觉得有必要好好介绍一下<strong>Obsidian</strong>——因为我自己就是从”排版焦虑症”患者变成”写作自由人”的活例子。</p>
+<h1 id="2-初识Markdown"><a href="#2-初识Markdown" class="headerlink" title="2 初识Markdown"></a>2 初识Markdown</h1><p>我有一个朋友，是位职场经验非常丰富的经理人，每一篇公号文都是干货满满。</p>
+<p>我特别喜欢阅读她的文章，可是这么有内涵的文稿，却被”颜值”给拖垮了。</p>
+<p><strong>她说，我也想提升呀，但是写文章已经耗尽了我的洪荒之力了……</strong></p>
+<p>记得我开始写公众号时，每次发文也一样经历这样的折磨：</p>
+<ul>
+<li>先在word里面绞尽脑汁写完内容</li>
+<li>复制到第三方排版网站</li>
+<li>确定标题，核对加粗，列表，字号……</li>
+<li>选择配色、样式、卡片</li>
+<li>上传插入图片等等</li>
+<li>小心翼翼复制到公众号</li>
+<li>检查发布</li>
+</ul>
+<p>直到我遇见Obsidian和Markdown，我才发现：写作可以这么简单纯粹、发布可以这么高效丝滑……</p>
+<h2 id="2-1-让我们从原始的文本开始"><a href="#2-1-让我们从原始的文本开始" class="headerlink" title="2.1 让我们从原始的文本开始"></a>2.1 让我们从原始的文本开始</h2><p>今天早上，市场部的小明接到任务要写一份<strong>产品发布会邀请函</strong>。他打开Word，写道：</p>
+<img src="/img/Pasted image 20250612211923.png" alt="Pasted image 20250612211923.png"   srcFile="Pasted image 20250612211923.png">
+
+<p>在Obsidian里，你也可以这么写，这就是原始的文本。</p>
+<p><strong>它没有任何排版，也看不出重点。</strong></p>
+<p>为了给它加上标题、加粗、列表等，你需要通过Word各类按钮进行排版格式。</p>
+<h2 id="2-2-利用Markdown，给文字披上衣服"><a href="#2-2-利用Markdown，给文字披上衣服" class="headerlink" title="2.2 利用Markdown，给文字披上衣服"></a>2.2 利用Markdown，给文字披上衣服</h2><p><strong>Markdown</strong> 其实就是这样一套”文字穿衣法则“，只不过，它用一些固定的”符号” 来代替了鼠标的点击操作而已。例如：</p>
+<ul>
+<li><code># 标题</code> -&gt; 标题</li>
+<li><code>**加粗</code> -&gt; 加粗</li>
+<li><code>- 列表</code> -&gt; 列表</li>
+</ul>
+<p>它允许用户使用纯文本的格式编写文档，之后又非常方便有效的转化成 <code>HTML</code> 文档在各种网站上展示。</p>
+<p>而用Word编写的文章，通过复制-粘贴到第三方平台，往往会失去格式，因此你不得不再次进行文本格式操作。</p>
+<p>Markdown于2024年发布。这款“语言”就是希望降低文本格式化的难点，<strong>易于阅读、易于编写、易于网络流通使用</strong> 就是它风靡全球，成为最成功的标记语言的原因之一。</p>
+<h2 id="2-3-新手只需要学会的Markdown符号"><a href="#2-3-新手只需要学会的Markdown符号" class="headerlink" title="2.3 新手只需要学会的Markdown符号"></a>2.3 新手只需要学会的Markdown符号</h2><h3 id="2-3-1-标题"><a href="#2-3-1-标题" class="headerlink" title="2.3.1 标题"></a>2.3.1 标题</h3><p>Markdown 语法适用符号 <code>#</code> 来确定标题。它一共分为了6个。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 我是一级标题</span><br><span class="line">## 我是二级标题</span><br><span class="line">### 我是三级标题</span><br><span class="line">#### 我是四级标题</span><br><span class="line">##### 我是五级标题</span><br><span class="line">###### 我是六级标题</span><br></pre></td></tr></table></figure>
+
+<p>当我们为原文打上<code>#</code>和 <code>##</code> 标签的时候，是不是一下子就清晰了很多呢？</p>
+<img src="/img/Pasted image 20250612212856.png" alt="Pasted image 20250612212856.png"   srcFile="Pasted image 20250612212856.png">
+
+<hr>
+<h3 id="2-3-2-强调、斜体、删除线和高亮"><a href="#2-3-2-强调、斜体、删除线和高亮" class="headerlink" title="2.3.2 强调、斜体、删除线和高亮"></a>2.3.2 强调、斜体、删除线和高亮</h3><p>在写作时，我们最常用的几个格式功能，估计也是<strong>加粗、斜体、删除线和高亮</strong>了。</p>
+<p>而在Markdown里都有对应的“语法配方”：</p>
+<ul>
+<li><code>**我是加粗**</code> -&gt; <strong>我是加粗</strong></li>
+<li><code>*我是斜体*</code> -&gt; <em>我是斜体</em></li>
+<li><code>~~我是删除线~~</code> -&gt; <del>我是删除线</del></li>
+<li><code>==我是高亮==</code> -&gt; &#x3D;&#x3D;我是高亮&#x3D;&#x3D;</li>
+</ul>
+<hr>
+<h3 id="2-3-3-列表和复选框"><a href="#2-3-3-列表和复选框" class="headerlink" title="2.3.3 列表和复选框"></a>2.3.3 列表和复选框</h3><p>在写作时，我们经常需要列出各种事项，Markdown 提供了两种简单好用的”列表方式”：</p>
+<h4 id="1-无序列表-自由随性的”便利贴”"><a href="#1-无序列表-自由随性的”便利贴”" class="headerlink" title="1. 无序列表 - 自由随性的”便利贴”"></a>1. 无序列表 - 自由随性的”便利贴”</h4><p>用法：在每行开头输入 <code>- </code></p>
+<h4 id="2-有序列表-严谨的”待办事项”"><a href="#2-有序列表-严谨的”待办事项”" class="headerlink" title="2. 有序列表 - 严谨的”待办事项”"></a>2. 有序列表 - 严谨的”待办事项”</h4><p>用法：在每行开头输入 <code>数字. </code></p>
+<h4 id="3-复选框"><a href="#3-复选框" class="headerlink" title="3. 复选框"></a>3. 复选框</h4><p>在Markdown中，复选框就像给你的待办事项装上了”开关”，让清单变得可以互动：<br>用法： <code>- [ ]</code>和 <code>- [x]</code> 来表示。</p>
+<p>通过<code>tab</code>键，可以进一步缩进。</p>
+<p>让我们给原文打上这类标签，看看效果吧。</p>
+<img src="/img/Pasted image 20250612224458.png" alt="Pasted image 20250612224458.png"   srcFile="Pasted image 20250612224458.png">
+
+<img src="/img/Pasted image 20250612224429.png" alt="Pasted image 20250612224429.png"   srcFile="Pasted image 20250612224429.png">
+
+<img src="/img/Pasted image 20250612224514.png" alt="Pasted image 20250612224514.png"   srcFile="Pasted image 20250612224514.png">
+
+<hr>
+<h3 id="2-3-4-引用"><a href="#2-3-4-引用" class="headerlink" title="2.3.4 引用"></a>2.3.4 引用</h3><p>在Markdown中，<strong>引用</strong>就像在笔记中插入一个个”对话气泡”，特别适合用来：</p>
+<ul>
+<li>标注重要观点</li>
+<li>记录他人发言</li>
+<li>突出关键内容</li>
+</ul>
+<p>用法：<code>&gt; </code><br>同样的，它也只是嵌套 例如 <code>&gt;</code> <code>&gt;&gt;</code> <code>&gt;&gt;&gt;</code>, 只是很少使用而已。</p>
+<hr>
+<h3 id="2-3-5分割线"><a href="#2-3-5分割线" class="headerlink" title="2.3.5分割线"></a>2.3.5分割线</h3><p>分割线常常用于分割写作中的内容块，使结构更清晰。</p>
+<p>用法: <code>---</code></p>
+<p>在我今天的文章中，我已经了很多分割线了。</p>
+<hr>
+<h3 id="2-3-6-图片、链接"><a href="#2-3-6-图片、链接" class="headerlink" title="2.3.6 图片、链接"></a>2.3.6 图片、链接</h3><p>Markdown通过以下的语法给出链接</p>
+<ul>
+<li>图片：<code>![[xxx.png]]</code></li>
+<li>链接:  <code>[链接的文字](链接的地址)</code></li>
+</ul>
+<p>但实际上，在Obsidian里，你可以截图之后，直接用<code>ctrl+v</code> 进行黏贴，它会自动存放在指定的文件夹中。</p>
+<hr>
+<h2 id="2-4-原始文本大变身"><a href="#2-4-原始文本大变身" class="headerlink" title="2.4 原始文本大变身"></a>2.4 原始文本大变身</h2><p>我相信，当你学完这几大符号，基本就满足日常的需要了。 </p>
+<p>复制一些漂亮的图标，让我们来看看最终的效果吧。</p>
+<img src="/img/Pasted image 20250612232315.png" alt="Pasted image 20250612232315.png"   srcFile="Pasted image 20250612232315.png">
+## 2.5 Markdown语法总结
+
+<img src="/img/Pasted image 20250612233125.png" alt="Pasted image 20250612233125.png"   srcFile="Pasted image 20250612233125.png">
+
+<p>Obsidian还有其他的语法，例如代码、表格等，可以有空的时候再去学习。</p>
+<p>如果你实在记不得，也是没有关系的。 Obsidian 支持</p>
+<ul>
+<li>选择文字，右键菜单按钮，同样可以执行各种操作</li>
+</ul>
+<img src="/img/Pasted image 20250613142149.png" alt="Pasted image 20250613142149.png"   srcFile="Pasted image 20250613142149.png">
+
+<ul>
+<li>它同样也支持常用的快捷键，例如选择文字，通过<code>ctrl+ b</code>来实现加粗等。</li>
+</ul>
+<h1 id="3-Obsidian写作流"><a href="#3-Obsidian写作流" class="headerlink" title="3 Obsidian写作流"></a>3 Obsidian写作流</h1><p>当你熟悉Markdown后，在Obsidian写作就会如行云流水般顺畅 – 那种手指始终在键盘上起舞的愉悦感难以言表：</p>
+<ul>
+<li>想加标题 <code># </code></li>
+<li>想加强调 <code>** **</code>, 我还可以<code>ctrl+B</code></li>
+<li>列清单：<code>- </code>或<code>1. </code></li>
+</ul>
+<p>比起传统的写作，<code>写稿 - 排版 - 修改</code>循环，<strong>Markdown</strong> 写作者无需在键盘和鼠标间来回切换。这种专注的”心流状态” ，让你能够<strong>保持思维的连贯性、真正享受写作本身的乐趣。</strong></p>
+<p>你会惊讶的发现： 噢， 原来文字可以这么自然地流畅而出。</p>
+<h1 id="4-所见即所得，一键发布公众号"><a href="#4-所见即所得，一键发布公众号" class="headerlink" title="4 所见即所得，一键发布公众号"></a>4 所见即所得，一键发布公众号</h1><p>想象你的 Obsidian 是一个智能手机，<strong>插件</strong>就是你可以下载安装的”App”。</p>
+<p>就像给手机装<strong>微信</strong>能聊天、装<strong>美团</strong>能点外卖一样，插件能给 Obsidian 添加各种新功能！</p>
+<p>基础版的Obsidian就像自行车一样，能记笔记；装上插件，就变成了变形金刚了。</p>
+<p>可以说，你能在拥有2400多款插件的<strong>社区插件市场</strong>里，找到你所需要的插件。</p>
+<p>我的公众号文写作排版，就是利用夜半开发的<code>MP Preview</code> 插件，来实现一键复制粘贴到公众号发布的。</p>
+<p>它真是好用到飞起。通常我会打开预览效果：</p>
+<ul>
+<li>左边是我的编辑区</li>
+<li>右边是我的实时预览区</li>
+</ul>
+<img src="/img/Pasted image 20250613145237.png" alt="Pasted image 20250613145237.png"   srcFile="Pasted image 20250613145237.png">
+
+<p>所见即所得，当我完成所有的写作之后，只需要按下下方的按钮 <code>复制到公众号</code> 就可以进行发布了。所有的格式、图片都会实时同步过去。</p>
+<p>如果你想了解更多，请参考原作者的这篇文稿：</p>
+<h1 id="5-结尾"><a href="#5-结尾" class="headerlink" title="5 结尾"></a>5 结尾</h1><p>希望我今天的<strong>Markdown之旅</strong>，可以让你发现它的美妙。</p>
+<p>但这仅仅只是开始，<strong>Obsidian就像个百宝箱，它的强大和美妙还需要我们慢慢去挖掘。</strong></p>
+<p>让我们一切告别繁琐的格式工具箱，回归纯粹的写作，<strong>享受行云流水般码字的感觉。</strong></p>
+<p>先从简单的练习开始，一旦掌握，它会变成你终生的技能，再也回不去了。</p>
+<p>跟我一起开始探索<strong>Obsidian</strong>的奇妙之旅吧。</p>
+<img src="/img/keepgoing02.jpg" alt="Pasted image 20250613145237.png"   srcFile="Pasted image 20250613145237.png"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://blog.arina-dev.com">Arina</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://blog.arina-dev.com/2025/08/16/notes-note05/">http://blog.arina-dev.com/2025/08/16/notes-note05/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://blog.arina-dev.com" target="_blank">Moments In Time - 时光序</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/obsidian/">obsidian</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/08/16/notes-note04/" title="Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian</div></div><div class="info-2"><div class="info-item-1"> # 1 缘起  今天特别想把Obsidian介绍给大家，我想我也算是为爱发声。 我到最近才知道原来Obsidian是在2020年才发布的，当时内心涌起一丝惊讶–因为它给我感觉，就是已经陪伴了我很久很久了，大概是因为我每天都在使用它。 在漫长的笔记软件探索之路上，Obsidian成为了我的终点站。从最初的Word到印象笔记，再到Typora和Notion，我就像Obsidian的创始人Erica Xu一样，在数字工具的海洋中不断寻觅，却始终找不到那个”刚刚好”的解决方案。 直到2020年那个特殊的疫情期间，Obsidian应运而生，而我幸运地在早期就遇见了它。这种感觉，就像是终于找到了命中注定的灵魂伴侣，从此不再需要寻觅。 Obsidian远不止是一个简单的笔记软件，它是一款革命性的知识库管理工具。由Shida Li（李世达）和Erica Xu（徐子殷）共同开发的Obsidian，在2020年3月30日发布了第一个版本，并且个人使用完全免费。 那么，究竟是什么让它如此特别，如此吸引我呢？ 2 Obsidian的魅力2.1 纯文本的存储模式Obsidian...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/08/16/notes-note04/" title="Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-16</div><div class="info-item-2">Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian</div></div><div class="info-2"><div class="info-item-1"> # 1 缘起  今天特别想把Obsidian介绍给大家，我想我也算是为爱发声。 我到最近才知道原来Obsidian是在2020年才发布的，当时内心涌起一丝惊讶–因为它给我感觉，就是已经陪伴了我很久很久了，大概是因为我每天都在使用它。 在漫长的笔记软件探索之路上，Obsidian成为了我的终点站。从最初的Word到印象笔记，再到Typora和Notion，我就像Obsidian的创始人Erica Xu一样，在数字工具的海洋中不断寻觅，却始终找不到那个”刚刚好”的解决方案。 直到2020年那个特殊的疫情期间，Obsidian应运而生，而我幸运地在早期就遇见了它。这种感觉，就像是终于找到了命中注定的灵魂伴侣，从此不再需要寻觅。 Obsidian远不止是一个简单的笔记软件，它是一款革命性的知识库管理工具。由Shida Li（李世达）和Erica Xu（徐子殷）共同开发的Obsidian，在2020年3月30日发布了第一个版本，并且个人使用完全免费。 那么，究竟是什么让它如此特别，如此吸引我呢？ 2 Obsidian的魅力2.1 纯文本的存储模式Obsidian...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Arina</div><div class="author-info-description">时光流转，光阴不驻，岁月如歌，点滴留痕.</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/stkwn" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E7%BC%98%E8%B5%B7"><span class="toc-number">1.</span> <span class="toc-text">1 缘起</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%88%9D%E8%AF%86Markdown"><span class="toc-number">2.</span> <span class="toc-text">2 初识Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%AE%A9%E6%88%91%E4%BB%AC%E4%BB%8E%E5%8E%9F%E5%A7%8B%E7%9A%84%E6%96%87%E6%9C%AC%E5%BC%80%E5%A7%8B"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 让我们从原始的文本开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E5%88%A9%E7%94%A8Markdown%EF%BC%8C%E7%BB%99%E6%96%87%E5%AD%97%E6%8A%AB%E4%B8%8A%E8%A1%A3%E6%9C%8D"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 利用Markdown，给文字披上衣服</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E6%96%B0%E6%89%8B%E5%8F%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%BC%9A%E7%9A%84Markdown%E7%AC%A6%E5%8F%B7"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 新手只需要学会的Markdown符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-1-%E6%A0%87%E9%A2%98"><span class="toc-number">2.3.1.</span> <span class="toc-text">2.3.1 标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-2-%E5%BC%BA%E8%B0%83%E3%80%81%E6%96%9C%E4%BD%93%E3%80%81%E5%88%A0%E9%99%A4%E7%BA%BF%E5%92%8C%E9%AB%98%E4%BA%AE"><span class="toc-number">2.3.2.</span> <span class="toc-text">2.3.2 强调、斜体、删除线和高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-3-%E5%88%97%E8%A1%A8%E5%92%8C%E5%A4%8D%E9%80%89%E6%A1%86"><span class="toc-number">2.3.3.</span> <span class="toc-text">2.3.3 列表和复选框</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8-%E8%87%AA%E7%94%B1%E9%9A%8F%E6%80%A7%E7%9A%84%E2%80%9D%E4%BE%BF%E5%88%A9%E8%B4%B4%E2%80%9D"><span class="toc-number">2.3.3.1.</span> <span class="toc-text">1. 无序列表 - 自由随性的”便利贴”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8-%E4%B8%A5%E8%B0%A8%E7%9A%84%E2%80%9D%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%E2%80%9D"><span class="toc-number">2.3.3.2.</span> <span class="toc-text">2. 有序列表 - 严谨的”待办事项”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%A4%8D%E9%80%89%E6%A1%86"><span class="toc-number">2.3.3.3.</span> <span class="toc-text">3. 复选框</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-4-%E5%BC%95%E7%94%A8"><span class="toc-number">2.3.4.</span> <span class="toc-text">2.3.4 引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-5%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">2.3.5.</span> <span class="toc-text">2.3.5分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-6-%E5%9B%BE%E7%89%87%E3%80%81%E9%93%BE%E6%8E%A5"><span class="toc-number">2.3.6.</span> <span class="toc-text">2.3.6 图片、链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E5%8E%9F%E5%A7%8B%E6%96%87%E6%9C%AC%E5%A4%A7%E5%8F%98%E8%BA%AB"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 原始文本大变身</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Obsidian%E5%86%99%E4%BD%9C%E6%B5%81"><span class="toc-number">3.</span> <span class="toc-text">3 Obsidian写作流</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97%EF%BC%8C%E4%B8%80%E9%94%AE%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="toc-number">4.</span> <span class="toc-text">4 所见即所得，一键发布公众号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E7%BB%93%E5%B0%BE"><span class="toc-number">5.</span> <span class="toc-text">5 结尾</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/16/notes-note05/" title="Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号">Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号</a><time datetime="2025-08-16T11:08:59.863Z" title="发表于 2025-08-16 21:08:59">2025-08-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/16/notes-note04/" title="Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian">Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian</a><time datetime="2025-08-16T10:57:24.262Z" title="发表于 2025-08-16 20:57:24">2025-08-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/04/life-life02/" title="AI时代下的思索：学会与AI共舞">AI时代下的思索：学会与AI共舞</a><time datetime="2025-06-04T10:05:24.000Z" title="发表于 2025-06-04 20:05:24">2025-06-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/04/notes-note03/" title="Hexo学习笔记(3)">Hexo学习笔记(3)</a><time datetime="2025-06-04T08:40:22.000Z" title="发表于 2025-06-04 18:40:22">2025-06-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/07/travel-travel01/" title="2024圣诞之新西兰之旅">2024圣诞之新西兰之旅</a><time datetime="2025-02-07T03:00:12.494Z" title="发表于 2025-02-07 14:00:12">2025-02-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By Arina</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian | Moments In Time - 时光序</title><meta name="author" content="Arina"><meta name="copyright" content="Arina"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="# 1 缘起  今天特别想把Obsidian介绍给大家，我想我也算是为爱发声。 我到最近才知道原来Obsidian是在2020年才发布的，当时内心涌起一丝惊讶–因为它给我感觉，就是已经陪伴了我很久很久了，大概是因为我每天都在使用它。 在漫长的笔记软件探索之路上，Obsidian成为了我的终点站。从最初的Word到印象笔记，再到Typora和Notion，我就像Obsidian的创始人Erica">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian">
+<meta property="og:url" content="http://blog.arina-dev.com/2025/08/16/notes-note04/index.html">
+<meta property="og:site_name" content="Moments In Time - 时光序">
+<meta property="og:description" content="# 1 缘起  今天特别想把Obsidian介绍给大家，我想我也算是为爱发声。 我到最近才知道原来Obsidian是在2020年才发布的，当时内心涌起一丝惊讶–因为它给我感觉，就是已经陪伴了我很久很久了，大概是因为我每天都在使用它。 在漫长的笔记软件探索之路上，Obsidian成为了我的终点站。从最初的Word到印象笔记，再到Typora和Notion，我就像Obsidian的创始人Erica">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://blog.arina-dev.com/img/avatar.png">
+<meta property="article:published_time" content="2025-08-16T10:57:24.262Z">
+<meta property="article:modified_time" content="2025-08-16T11:12:40.692Z">
+<meta property="article:author" content="Arina">
+<meta property="article:tag" content="obsidian">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blog.arina-dev.com/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian",
+  "url": "http://blog.arina-dev.com/2025/08/16/notes-note04/",
+  "image": "http://blog.arina-dev.com/img/avatar.png",
+  "datePublished": "2025-08-16T10:57:24.262Z",
+  "dateModified": "2025-08-16T11:12:40.692Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Arina",
+      "url": "http://blog.arina-dev.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://blog.arina-dev.com/2025/08/16/notes-note04/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/notes"><i class="fa-fw fas fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page" href="/categories/life"><i class="fa-fw fas fa-film"></i><span> 生活</span></a></div><div class="menus_item"><a class="site-page" href="/categories/books"><i class="fa-fw fas fa-book-open"></i><span> 读书</span></a></div><div class="menus_item"><a class="site-page" href="/categories/travel"><i class="fa-fw fas fa-map"></i><span> 旅行</span></a></div><div class="menus_item"><a class="site-page" href="/photo"><i class="fa-fw fas fa-image"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/links"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/default_top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo.png" alt="Logo"><span class="site-name">Moments In Time - 时光序</span></a><a class="nav-page-title" href="/"><span class="site-name">Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/notes"><i class="fa-fw fas fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page" href="/categories/life"><i class="fa-fw fas fa-film"></i><span> 生活</span></a></div><div class="menus_item"><a class="site-page" href="/categories/books"><i class="fa-fw fas fa-book-open"></i><span> 读书</span></a></div><div class="menus_item"><a class="site-page" href="/categories/travel"><i class="fa-fw fas fa-map"></i><span> 旅行</span></a></div><div class="menus_item"><a class="site-page" href="/photo"><i class="fa-fw fas fa-image"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/links"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-16T10:57:24.262Z" title="发表于 2025-08-16 20:57:24">2025-08-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-16T11:12:40.692Z" title="更新于 2025-08-16 21:12:40">2025-08-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/notes/">notes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><img src="/img/obsidian_01.png" alt="obsidian_01.png"   srcFile="obsidian_01.png">
+# 1 缘起
+
+<p>今天特别想把<strong>Obsidian</strong>介绍给大家，我想我也算是为爱发声。</p>
+<p>我到最近才知道原来Obsidian是在2020年才发布的，当时内心涌起一丝惊讶–因为它给我感觉，就是已经陪伴了我很久很久了，大概是因为我每天都在使用它。</p>
+<p>在漫长的笔记软件探索之路上，Obsidian成为了我的终点站。从最初的Word到印象笔记，再到Typora和Notion，我就像Obsidian的创始人Erica Xu一样，在数字工具的海洋中不断寻觅，却始终找不到那个”刚刚好”的解决方案。</p>
+<p>直到2020年那个特殊的疫情期间，Obsidian应运而生，而我幸运地在早期就遇见了它。这种感觉，就像是终于找到了命中注定的灵魂伴侣，从此不再需要寻觅。</p>
+<p>Obsidian远不止是一个简单的笔记软件，它是一款革命性的<strong>知识库管理工具</strong>。由Shida Li（李世达）和Erica Xu（徐子殷）共同开发的Obsidian，在2020年3月30日发布了第一个版本，并且个人使用完全免费。</p>
+<p>那么，究竟是什么让它如此特别，如此吸引我呢？</p>
+<h1 id="2-Obsidian的魅力"><a href="#2-Obsidian的魅力" class="headerlink" title="2 Obsidian的魅力"></a>2 Obsidian的魅力</h1><h2 id="2-1-纯文本的存储模式"><a href="#2-1-纯文本的存储模式" class="headerlink" title="2.1 纯文本的存储模式"></a>2.1 纯文本的存储模式</h2><p>Obsidian 最有价值的核心理念之一：<strong>笔记是以 Markdown 格式保存在本地，用户拥有对数据的完全控制权</strong>。</p>
+<p>所有笔记都是普通的 <code>.md</code> 纯文本文件，保存在你指定的本地普通的文件夹中（被称为 “Vault”）。它<strong>不依赖任何云服务或厂商服务器</strong>，因而你不需要担心公司倒闭、服务器宕机已经Obsidian软件不在维护。<br><img src="\img\obsidian_02.png" alt="obsidian_02.png"   srcFile="obsidian_02.png"><br><em>（图：Markdown格式，存储于本地，文件体积小）</em></p>
+<p>这种设计体现了对”数据主权”和”长期可持续性”的深刻理解。</p>
+<h2 id="2-2-使用Markdown文件结构"><a href="#2-2-使用Markdown文件结构" class="headerlink" title="2.2 使用Markdown文件结构"></a>2.2 使用Markdown文件结构</h2><p>如果你第一次听说<strong>Markdown</strong>，可能会被这个看似技术感十足的名词吓跑。但其实，Markdown 只是一种“排版工具”。</p>
+<p>在使用其他软件写文章记笔记时，经常不得不中断思路去点击各种格式按钮，进行标题、加粗、列表等操作，我常常觉得它是件非常繁琐令人困扰的事情。</p>
+<p>而<strong>Markdonw</strong> 却仅使用几个简单的符号，就能让纯文本瞬间拥有清晰的层级结构，这简直是码字者的福音。</p>
+<p>其实，你也可以完全在 Obsidian 里像普通记事本一样记录，一个符号都不用学。</p>
+<p>但当你学会了它，你就会发现：原来用键盘就能完成排版，比鼠标来回切换高效十倍。这种「发现新大陆」的体验，正是 Markdown 的隐形魔力——<strong>它用20分钟的学习成本，换来了未来所有笔记的整洁与自由</strong>。<br><img src="\img\obsidian_03.png" alt="obsidian_03.png"   srcFile="obsidian_03.png"><br><em>（图：Mardown语法其实很简单）</em></p>
+<h2 id="2-3-双向链接"><a href="#2-3-双向链接" class="headerlink" title="2.3 双向链接"></a>2.3 双向链接</h2><p><strong>Obsidian最出圈的设计，一定是它的「双向链接」</strong>，它不是普通笔记里的网页超链接，它也彻底改变了我们组织知识的方式。</p>
+<p>每次新建链接，Obsidian都会默默生成一张关系图谱。当你有一个灵感闪现，你可以只需要敲入<code>[[灵感1]]</code>, 就创建了一个潜在的笔记，创建了一个潜在的链接。</p>
+<p><code>[[]]</code>符号是如此强大，你只需要敲入开头，它甚至就马上开始帮你搜索对应的页面，这种丝滑的「想到就链」体验，才是构建个人知识库的真正加速度。</p>
+<img src="\img\obsidian_05.png" alt="obsidian_05.png"   srcFile="obsidian_05.png">
+*（图：强大的链接功能）*
+## 2.4 标签与查找
+
+<p>在传统的笔记软件里，查找内容往往意味着在文件夹里翻来翻去，或者依赖模糊的关键词搜索，而Obsidian的<strong>标签系统+高级查找</strong>，让信息的定位变得极其高效，甚至能帮你发现未曾注意的关联。</p>
+<ol>
+<li><p><strong>标签：比文件夹更灵活的归类方式</strong><br>文件夹是“非此即彼”的——一篇笔记只能放在一个地方。但现实中的知识往往是多维交叉的。Obsidian的标签（<code>#标签</code>）打破了这种限制。比如一篇关于《刻意练习》的读书笔记，可以同时打上 <code>#心理学</code>、<code>#学习方法</code>、<code>#自我提升</code>，而不必纠结归到哪个文件夹。</p>
+</li>
+<li><p><strong>查找：从基础搜索到精准定位</strong><br>Obsidian的搜索功能远超“Ctrl+F”的级别，比如说你想搜寻记忆里的某个片段时，它不像传统软件那样需要翻找文件夹，或进行模糊关键字匹配。而是：</p>
+</li>
+</ol>
+<ul>
+<li>直接输入关键字，就可以查看所有含有关键字的内容，实时高亮。全库检索。</li>
+<li>输入标签，可以查找所有含改标签的笔记。例如通过简单的<code>tag:#标签名</code>语法，你可以精准锁定特定标签下的所有笔记。</li>
+<li>还能把搜索结果进行快照，生成书签。下次你想再检索相同的内容，则会更方便。</li>
+</ul>
+<ol start="3">
+<li><strong>图谱视图：让隐藏的知识连接浮出水面</strong><br>当我们将搜索功能与图谱视图相结合时，每次搜索不再只是简单的列表展示，而是会生成一张动态的知识网络图。在这张图上，你可以直观地看到关键词之间的关系脉络，那些隐藏的知识连接就像夜空中突然被点亮的星座一样清晰可见。</li>
+</ol>
+<img src="\img\obsidian_07.png" alt="obsidian_07.png"   srcFile="obsidian_07.png">
+
+<h2 id="2-5-强大的社区生态"><a href="#2-5-强大的社区生态" class="headerlink" title="2.5 强大的社区生态"></a>2.5 强大的社区生态</h2><p>如果obsidian是一款封闭式软件，那么它可能不会如此闻名。它的开源和生态，是这款工具持续进化，远超同类，拥有无限潜力的原因。</p>
+<ol>
+<li><strong>插件系统：你的Obsidian，由你定义</strong><br>Obsidian的核心设计极简，但它的<strong>开放插件体系</strong>让它几乎可以满足任何需求：比如常见的日历、看板、图表、任务、模板等等，只有你想不到，没有你找不到。这些插件并非官方，来自全球开发者社区，<strong>你可以像搭积木一样，组合出最适合自己的工作流和面板</strong>。</li>
+</ol>
+<img src="\img\obsidian_04.png" alt="obsidian_04.png"   srcFile="obsidian_04.png">
+*（图：目前社区已经拥有2480个插件）*
+
+<p>比如我现在写公号文，就是利用<code>MP preview</code>来实现<strong>撰写 - 实时预览 - 发布</strong>的全流程。它是由开发者<strong>夜半</strong>开发（*），支持实时预览，可以选择多种主题，并能一键复制到公众号。解决了所见即所得的丝滑发布操作。</p>
+<img src="\img\obsidian_06.png" alt="obsidian_06.png"   srcFile="obsidian_06.png">
+
+<p>（图：夜半开发的插件，是公号文写作者的福音）</p>
+<ol start="2">
+<li><strong>主题和CSS</strong><br>如果你对默认界面审美疲劳，社区提供了<strong>上百款主题和CSS片段</strong>，从极简主义到科幻风，从护眼模式到代码友好型，总有一款能让你舒心。文艺青年也许更喜欢定制和清雅的风格，而想我这样的，可能更喜欢简约型的吧。</li>
+</ol>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>在这个信息爆炸的时代，Obsidian为我们提供了一种全新的方式来组织、连接和理解知识。很多人都觉得Obsidian想围棋一样，易学难精，因为它不只是一个软件，更是一种思维方式，也是一个不断可以生长的知识系统。</p>
+<p>每次你去了解它和熟悉它，重建自己的工作流，其实也是在审视自己，察觉和改进自己。但愿我也能在这场笔记的探索之旅中，与你同行，共勉进步。</p>
+<img src="/img/keepgoing02.jpg" alt="Pasted image 20250613145237.png"   srcFile="Pasted image 20250613145237.png"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://blog.arina-dev.com">Arina</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://blog.arina-dev.com/2025/08/16/notes-note04/">http://blog.arina-dev.com/2025/08/16/notes-note04/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://blog.arina-dev.com" target="_blank">Moments In Time - 时光序</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/obsidian/">obsidian</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/06/04/life-life02/" title="AI时代下的思索：学会与AI共舞"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">AI时代下的思索：学会与AI共舞</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/2025/08/16/notes-note05/" title="Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号</div></div><div class="info-2"><div class="info-item-1">1 缘起前几天有位朋友对我说,：  你推荐的那个Obsidian软件，我都看不太懂呢，都是一堆术语，Markdown，插件，主题，一看就头大，看完我都不想用了。  这话把我给愣住了。是啊，我太习惯说专业术语了，完全没考虑到新手的感受。 但是如果因为这个原因，就让你错过了这么一款好软件，我觉得实在是太可惜了。 正因如此，我更觉得有必要好好介绍一下Obsidian——因为我自己就是从”排版焦虑症”患者变成”写作自由人”的活例子。 2 初识Markdown我有一个朋友，是位职场经验非常丰富的经理人，每一篇公号文都是干货满满。 我特别喜欢阅读她的文章，可是这么有内涵的文稿，却被”颜值”给拖垮了。 她说，我也想提升呀，但是写文章已经耗尽了我的洪荒之力了…… 记得我开始写公众号时，每次发文也一样经历这样的折磨：  先在word里面绞尽脑汁写完内容 复制到第三方排版网站 确定标题，核对加粗，列表，字号…… 选择配色、样式、卡片 上传插入图片等等 小心翼翼复制到公众号 检查发布  直到我遇见Obsidian和Markdown，我才发现：写作可以这么简单纯粹、发布可以这么高效丝滑…… 2.1...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/08/16/notes-note05/" title="Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-16</div><div class="info-item-2">Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号</div></div><div class="info-2"><div class="info-item-1">1 缘起前几天有位朋友对我说,：  你推荐的那个Obsidian软件，我都看不太懂呢，都是一堆术语，Markdown，插件，主题，一看就头大，看完我都不想用了。  这话把我给愣住了。是啊，我太习惯说专业术语了，完全没考虑到新手的感受。 但是如果因为这个原因，就让你错过了这么一款好软件，我觉得实在是太可惜了。 正因如此，我更觉得有必要好好介绍一下Obsidian——因为我自己就是从”排版焦虑症”患者变成”写作自由人”的活例子。 2 初识Markdown我有一个朋友，是位职场经验非常丰富的经理人，每一篇公号文都是干货满满。 我特别喜欢阅读她的文章，可是这么有内涵的文稿，却被”颜值”给拖垮了。 她说，我也想提升呀，但是写文章已经耗尽了我的洪荒之力了…… 记得我开始写公众号时，每次发文也一样经历这样的折磨：  先在word里面绞尽脑汁写完内容 复制到第三方排版网站 确定标题，核对加粗，列表，字号…… 选择配色、样式、卡片 上传插入图片等等 小心翼翼复制到公众号 检查发布  直到我遇见Obsidian和Markdown，我才发现：写作可以这么简单纯粹、发布可以这么高效丝滑…… 2.1...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Arina</div><div class="author-info-description">时光流转，光阴不驻，岁月如歌，点滴留痕.</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/stkwn" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Obsidian%E7%9A%84%E9%AD%85%E5%8A%9B"><span class="toc-number">1.</span> <span class="toc-text">2 Obsidian的魅力</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E7%BA%AF%E6%96%87%E6%9C%AC%E7%9A%84%E5%AD%98%E5%82%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">2.1 纯文本的存储模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E4%BD%BF%E7%94%A8Markdown%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.</span> <span class="toc-text">2.2 使用Markdown文件结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E5%8F%8C%E5%90%91%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.</span> <span class="toc-text">2.3 双向链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E5%BC%BA%E5%A4%A7%E7%9A%84%E7%A4%BE%E5%8C%BA%E7%94%9F%E6%80%81"><span class="toc-number">1.4.</span> <span class="toc-text">2.5 强大的社区生态</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/16/notes-note05/" title="Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号">Obsidian完全入门之二：告别排版焦虑，用Obsidian一键发布公众号</a><time datetime="2025-08-16T11:08:59.863Z" title="发表于 2025-08-16 21:08:59">2025-08-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/08/16/notes-note04/" title="Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian">Obsidian完全入门之一：AI时代，本地知识库，我还是只用Obsidian</a><time datetime="2025-08-16T10:57:24.262Z" title="发表于 2025-08-16 20:57:24">2025-08-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/04/life-life02/" title="AI时代下的思索：学会与AI共舞">AI时代下的思索：学会与AI共舞</a><time datetime="2025-06-04T10:05:24.000Z" title="发表于 2025-06-04 20:05:24">2025-06-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/06/04/notes-note03/" title="Hexo学习笔记(3)">Hexo学习笔记(3)</a><time datetime="2025-06-04T08:40:22.000Z" title="发表于 2025-06-04 18:40:22">2025-06-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/07/travel-travel01/" title="2024圣诞之新西兰之旅">2024圣诞之新西兰之旅</a><time datetime="2025-02-07T03:00:12.494Z" title="发表于 2025-02-07 14:00:12">2025-02-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By Arina</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
