@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Obsidian完全入门之二十二：AI好记让我笔记效率再次升级 | Moments In Time - 时光序</title><meta name="author" content="Arina"><meta name="copyright" content="Arina"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="## 1 前情回顾  做为一名Obsidian用户，我一直在寻找各种方法来提升我的笔记效率。毕竟，做为一名IT牛马，时刻保持学习和记录就是我的”生存技能“。谁让这个世界既复杂又瞬息万变呢？ 很多人说油管是自学者的天堂。确实，技术博主们都在慷慨分享了大量实用技巧和经验。 然而AI的崛起，一方面给我们带来便利的同时，也让我们面临更多的挑战。资源多了，质量却参差不齐；信息获取更容易了，筛选和整理却成了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Obsidian完全入门之二十二：AI好记让我笔记效率再次升级">
+<meta property="og:url" content="https://daysprout.net/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/index.html">
+<meta property="og:site_name" content="Moments In Time - 时光序">
+<meta property="og:description" content="## 1 前情回顾  做为一名Obsidian用户，我一直在寻找各种方法来提升我的笔记效率。毕竟，做为一名IT牛马，时刻保持学习和记录就是我的”生存技能“。谁让这个世界既复杂又瞬息万变呢？ 很多人说油管是自学者的天堂。确实，技术博主们都在慷慨分享了大量实用技巧和经验。 然而AI的崛起，一方面给我们带来便利的同时，也让我们面临更多的挑战。资源多了，质量却参差不齐；信息获取更容易了，筛选和整理却成了">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://daysprout.net/img/avatar.png">
+<meta property="article:published_time" content="2025-09-24T12:11:37.164Z">
+<meta property="article:modified_time" content="2025-09-24T12:11:37.164Z">
+<meta property="article:author" content="Arina">
+<meta property="article:tag" content="obsidian">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://daysprout.net/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Obsidian完全入门之二十二：AI好记让我笔记效率再次升级",
+  "url": "https://daysprout.net/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/",
+  "image": "https://daysprout.net/img/avatar.png",
+  "datePublished": "2025-09-24T12:11:37.164Z",
+  "dateModified": "2025-09-24T12:11:37.164Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Arina",
+      "url": "https://daysprout.net/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://daysprout.net/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="您的AdSense验证码"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Obsidian完全入门之二十二：AI好记让我笔记效率再次升级',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2812613224204386" crossorigin="anonymous"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/notes"><i class="fa-fw fas fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page" href="/categories/life"><i class="fa-fw fas fa-film"></i><span> 生活</span></a></div><div class="menus_item"><a class="site-page" href="/categories/books"><i class="fa-fw fas fa-book-open"></i><span> 读书</span></a></div><div class="menus_item"><a class="site-page" href="/categories/travel"><i class="fa-fw fas fa-map"></i><span> 旅行</span></a></div><div class="menus_item"><a class="site-page" href="/photo"><i class="fa-fw fas fa-image"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/links"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div class="post type-公众号" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/default_top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo.png" alt="Logo"><span class="site-name">Moments In Time - 时光序</span></a><a class="nav-page-title" href="/"><span class="site-name">Obsidian完全入门之二十二：AI好记让我笔记效率再次升级</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/notes"><i class="fa-fw fas fa-book"></i><span> 笔记</span></a></div><div class="menus_item"><a class="site-page" href="/categories/life"><i class="fa-fw fas fa-film"></i><span> 生活</span></a></div><div class="menus_item"><a class="site-page" href="/categories/books"><i class="fa-fw fas fa-book-open"></i><span> 读书</span></a></div><div class="menus_item"><a class="site-page" href="/categories/travel"><i class="fa-fw fas fa-map"></i><span> 旅行</span></a></div><div class="menus_item"><a class="site-page" href="/photo"><i class="fa-fw fas fa-image"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/archives"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/links"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Obsidian完全入门之二十二：AI好记让我笔记效率再次升级</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-09-24T12:11:37.164Z" title="发表于 2025-09-24 22:11:37">2025-09-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-24T12:11:37.164Z" title="更新于 2025-09-24 22:11:37">2025-09-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/notes/">notes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span class="waline-pageview-count" data-path="/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><img src="/img/ff841c69efe14c5777c78b689bf88149.png" alt="ff841c69efe14c5777c78b689bf88149.png">
+## 1 前情回顾
+
+<p>做为一名Obsidian用户，我一直在寻找各种方法来<strong>提升我的笔记效率</strong>。毕竟，做为一名IT牛马，时刻保持学习和记录就是我的”生存技能“。谁让这个世界既复杂又瞬息万变呢？</p>
+<p>很多人说油管是自学者的天堂。确实，技术博主们都在慷慨分享了大量实用技巧和经验。</p>
+<p>然而AI的崛起，一方面给我们带来便利的同时，也让我们面临更多的挑战。<strong>资源多了，质量却参差不齐；信息获取更容易了，筛选和整理却成了新的难题。</strong></p>
+<p>我并不是一个擅长通过视频学习的人。对我来说，文字才是最高效的学习方式。再加上母语不是英语，字幕虽然能帮忙，但速度永远提不上去。</p>
+<p>因此，我一直在寻找一种更好的方式，能帮我<strong>快速翻译、过滤、整理和归纳</strong>这些信息。<strong>Ai好记</strong>，就是这样一款好工具，我觉得我应该推荐给大家。</p>
+<p>先上重点信息，想直接体验Ai好记</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://aihaoji.com/zh?utm_source=arina&utm_medium=referral">https://aihaoji.com/zh?utm_source=arina&amp;utm_medium=referral</a></p>
+</blockquote>
+<p>输入兑换码 <strong>[Arina]</strong> ，可以领取<strong>3天会员体验</strong>，私聊AI客服还能领取<strong>永久会员折扣码</strong>。 </p>
+<img src="/img/ec2a10bcc1e8f611d8327bb69ef4c722.jpg" alt="ec2a10bcc1e8f611d8327bb69ef4c722.jpg">
+## 2 初识Ai好记
+
+<h3 id="2-1-Ai好记是什么？"><a href="#2-1-Ai好记是什么？" class="headerlink" title="2.1 Ai好记是什么？"></a>2.1 Ai好记是什么？</h3><p>Ai好记是一款<strong>基于大语言模型的笔记整理工具</strong>。它的功能很多，但对我而言，最有价值的是这四点：</p>
+<ul>
+<li><strong>多语言翻译</strong>： 把非中文的内容翻译成中文，也支持不同语言的互译。</li>
+<li><strong>摘要提炼</strong>：帮你把长篇内容提炼成精华，节省阅读时间。</li>
+<li><strong>思维导图生成</strong>：把复杂的信息结构化，帮助你更好地理解和记忆。</li>
+<li><strong>导出到Obsidian</strong>：把整理好的内容直接导出到Obsidian，方便二次整理。</li>
+</ul>
+<h3 id="2-2-如何使用？"><a href="#2-2-如何使用？" class="headerlink" title="2.2 如何使用？"></a>2.2 如何使用？</h3><p>操作<strong>Ai好记</strong>非常简单，可以在浏览器中打开<code>https://aihaoji.com/zh</code> 网址，用微信登录免费注册并登录即可。</p>
+<img src="/img/Pasted-image-20250922221318.png" alt="Pasted-image-20250922221318.png">
+
+<p>它还有<strong>手机端</strong>，只需要扫码下载即可。<br><img src="/img/Pasted-image-20250922221601.png" alt="Pasted-image-20250922221601.png"></p>
+<h3 id="2-3-创建新笔记"><a href="#2-3-创建新笔记" class="headerlink" title="2.3 创建新笔记"></a>2.3 创建新笔记</h3><p>登录后，在左侧栏中，点击”<strong>我的笔记</strong>“，里面有一个<code>默认笔记本</code>，如果你没有创建任何的笔记本，系统就会使用这个默认的文件夹，所有创建的笔记都会存放在这里。</p>
+<p>每天工作摸鱼时，我会打开油管看看订阅的博主们有没有新视频。现在有了大数据，系统平台也会根据我的喜好，推荐一些我可能感兴趣的视频。</p>
+<p>看到感兴趣的，比如这个视频《5 Future-Proof Tech Skills You’ll Still Need in 2030》，通常我就会一键复制到Ai好记中。<br><img src="/img/Pasted-image-20250922223408.png" alt="Pasted-image-20250922223408.png"></p>
+<p>Ai好记会自动解析网址，根据需求进行设置。</p>
+<img src="/img/Pasted-image-20250922223725.png" alt="Pasted-image-20250922223725.png">
+
+<p>Ai好记的处理模式，可以包含多图、少图、无图。我一般会采用少图模式，这样它会把视频分割成少量的片段，每段生成一张图片，但是又不至于过于零碎。</p>
+<p><strong>默认情况下，它会先放在默认笔记本中，这就相当于我的收件箱</strong>，等我有空了，我会从这里选择我想看的笔记，进行学习和整理。</p>
+<p>你还可以区分不同的发言人，不过由于学习视频大部分都是单人的，所以我基本也就选择单人模式。</p>
+<p>你可以同时输入多个链接，笔记会自动创建，它们会需要一定的时间去处理。我呢，则自动切回“牛马”模式，麻利地继续工作去了。</p>
+<img src="/img/Pasted-image-20250922224119.png" alt="Pasted-image-20250922224119.png">
+
+<p>当然了，AI好记不止能支持油管，还包括Bilibili，小宇宙，抖音，快手，小红书等音视频。你可以同时输入多个链接，AI好记会批量解析，自动创建相应的笔记。它们会需要一定的时间去处理。我则自动切回“牛马”模式，麻利地继续工作去了。</p>
+<img src="/img/ee12a2da64b75c0a765181c6aa99c437.png" alt="ee12a2da64b75c0a765181c6aa99c437.png">
+### 2.4 创建笔记文件夹
+
+<p>除了默认文件夹，AI好记也支持创建不同的文件夹。默认笔记本是我的临时收件箱。</p>
+<p>我自己习惯将笔记分为四类：<strong>IT、AI、Obsidian、个人成长</strong>。这样更清晰，也更符合我的学习场景。默认文件夹相当于我的收件箱，所有没有处理的笔记，都是放在这里的。而经过处理的笔记，则转移到我分类号的<strong>其他文件夹</strong>中。</p>
+<img src="/img/Pasted-image-20250924211259.png" alt="Pasted-image-20250924211259.png">
+
+<h2 id="3-在Ai好记中整理笔记"><a href="#3-在Ai好记中整理笔记" class="headerlink" title="3 在Ai好记中整理笔记"></a>3 在Ai好记中整理笔记</h2><p>笔记处理好之后，就可以在“默认笔记本”中看到它了。点击进去，你可以看到它已经帮你生成了很多内容：思维导图、文字大纲，AI总结，沉浸式阅读等。让我们来仔细看看吧。</p>
+<h3 id="3-1-大纲与思维导图"><a href="#3-1-大纲与思维导图" class="headerlink" title="3.1 大纲与思维导图"></a>3.1 大纲与思维导图</h3><p>在笔记的左侧，可以看到”大纲和思维导图“。 <strong>它提供了两种模式</strong>：</p>
+<ul>
+<li>思维导图模式</li>
+<li>文字大纲模式</li>
+</ul>
+<p><strong>这两者都是对视频内容的结构化展示</strong>。思维导图更直观，而文字大纲则更适合快速浏览。视图可以展开和折叠，点击某一栏目，即可跳转到对应的内容段落。<strong>你可以可以点击编辑按钮，对思维导图进行修改。</strong></p>
+<img src="/img/Pasted-image-20250922230708.png" alt="Pasted-image-20250922230708.png">
+
+<h3 id="3-2-AI总结"><a href="#3-2-AI总结" class="headerlink" title="3.2 AI总结"></a>3.2 AI总结</h3><p>在<code>大纲和思维导图</code> 栏目旁边是<code>AI总结</code>，它会帮你把<strong>视频内容提炼成精华</strong>，节省你的阅读时间。它提供了”关键词标签“，”一句话总结“，”要点“，“深度问答”、“术语解释”等功能。</p>
+<img src="/img/Pasted-image-20250922231249.png" alt="Pasted-image-20250922231249.png">
+
+<h3 id="3-3-沉浸式阅读"><a href="#3-3-沉浸式阅读" class="headerlink" title="3.3 沉浸式阅读"></a>3.3 沉浸式阅读</h3><p>在笔记的右侧，则是”<strong>沉浸式阅读</strong>“。它会把视频的字幕，按照时间轴，分段展示出来。它主要分为：<strong>原文和AI润色版本</strong>。<br><img src="/img/Pasted-image-20250922231813.png" alt="Pasted-image-20250922231813.png"></p>
+<p>你一定会注意到右上角的极大图标：<strong>说话者识别、时间戳、双语对照，图片展示</strong>等。把这些功能都取消，你就会得到一个非常简洁的<strong>阅读界面</strong>。这就是纯字幕版啊。<strong>用它来学习英文也是不错的材料。</strong></p>
+<img src="/img/Pasted-image-20250922232002.png" alt="Pasted-image-20250922232002.png">
+
+<p>AI润色版也是如此，不过提供了<strong>双语对照</strong>功能。</p>
+<img src="/img/Pasted-image-20250922232202.png" alt="Pasted-image-20250922232202.png">
+
+<p>当然，你也是可以取消双语对照，这就变成了纯中文版本了。</p>
+<img src="/img/Pasted-image-20250922232054.png" alt="Pasted-image-20250922232054.png">
+
+<p><strong>不得不说，对于非母语的我来说，这个功能很实用了</strong>。通过Ai好记的沉浸式阅读功能，我可以快速阅读，能大致判断这个视频内容<strong>是否值得深入学习，或者简单归纳，亦或直接跳过</strong>。</p>
+<h3 id="3-4-处理笔记"><a href="#3-4-处理笔记" class="headerlink" title="3.4 处理笔记"></a>3.4 处理笔记</h3><p>当这个视频笔记对我有所帮助，我就会开启“<strong>学习模式</strong>”，对它进行进一步的处理。</p>
+<h4 id="3-1-高亮笔记"><a href="#3-1-高亮笔记" class="headerlink" title="3.1 高亮笔记"></a>3.1 高亮笔记</h4><p>我会把我认为<strong>重要的内容，进行高亮标记</strong>。高亮笔记提供几种颜色选择。一般<strong>黄色我会用来标记重要内容，红色我则用来标记与我认知相反或者不是特别认可的内容</strong>。另外，我还会用<strong>蓝色标记一些英文单词、短语和句子</strong>，方便我后续复习和记忆。</p>
+<img src="/img/Pasted-image-20250923202624.png" alt="Pasted-image-20250923202624.png">
+#### 3.2 添加记录
+
+<p>除了高亮内容，你还可以提供记录按钮，添加一些个人的想法和评论。</p>
+<img src="/img/Pasted-image-20250923203125.png" alt="Pasted-image-20250923203125.png">
+
+<h3 id="3-5-导出到Obsidian"><a href="#3-5-导出到Obsidian" class="headerlink" title="3.5 导出到Obsidian"></a>3.5 导出到Obsidian</h3><p>Ai好记，对于Obsidian用户来讲，实在是非常友好，<strong>因为它支持导出到Obsidian</strong>。只需要在右上角点击“导出”，就可以选择不同的内容格式，直接导出到Obsidian中。</p>
+<img src="/img/Pasted-image-20250923203444.png" alt="Pasted-image-20250923203444.png">
+
+<p>这样它就在<strong>本地生成了一个笔记内容</strong>，方便我在Obsidian中进行进一步的编辑和使用。<br><img src="/img/Pasted-image-20250923203743.png" alt="Pasted-image-20250923203743.png"></p>
+<h2 id="4-结语"><a href="#4-结语" class="headerlink" title="4 结语"></a>4 结语</h2><p>Ai好记对我来说，不只是一个笔记整理工具，更像是一款<strong>学习加速器</strong>。<strong>它帮我快速翻译和整理视频内容，自动生成大纲与思维导图，让原本冗长复杂的学习材料变得清晰有序。</strong> 在它的帮助下，我节省了大量时间和精力，学习效率也得到了显著提升。</p>
+<p>当然，它也并非完美。比如目前的导出功能还比较基础，无法完整包含我手动添加的记录，对元数据的支持也有待加强。但这些小瑕疵并不会掩盖它带来的整体价值。对我而言，它已经成为学习路上的可靠助手。</p>
+<p>随着产品的不断迭代，我相信这些问题都会被逐步解决。对于同样需要高效整理知识、提升学习效率的你，<strong>Ai好记或许也能成为你的好帮手</strong>。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://daysprout.net">Arina</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://daysprout.net/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/">https://daysprout.net/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://daysprout.net" target="_blank">Moments In Time - 时光序</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/obsidian/">obsidian</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%B8%80/" title="Obsidian完全入门之二十一：门徒的修行，初学者指南"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Obsidian完全入门之二十一：门徒的修行，初学者指南</div></div><div class="info-2"><div class="info-item-1">  1 门徒困境我常常想，对obsidian感兴趣的朋友，都是对知识很渴望的人。我就把大家称呼为Obsidian的门徒吧。大家都想利用好一个工具，搭建属于自己的知识库。但是Obsidian这个师门，似乎有点难学。 其实大家的困境，我也经历过。Obsidian的学习曲线确实有点陡峭，一开始，陌生的界面，复杂的功能，确实让人有些无从下手。 所以我就想写一篇小小的指南，给初学者一些建议，帮助大家更快地上手Obsidian。 2 破局之路2.1 从简单开始，越简单越有效Obsidian确实有很多非常强大的功能，这就导致了很多新用户感到无所适从，不知道从哪里开始。我的建议是，先从最基本的功能入手，逐步深入。你只需要掌握最重要的，但是也是最简单的功能，包括： 2.1.1...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/08/17/notes-20250817-155535/" title="Obsidian 完全入门之三：从下载安装到高效笔记组织（新手保姆级教程）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-17</div><div class="info-item-2">Obsidian 完全入门之三：从下载安装到高效笔记组织（新手保姆级教程）</div></div><div class="info-2"><div class="info-item-1">#obsidian #教程 前几天我写了2篇关于 Obsidian 的文章，分别介绍了 Obsidian 的核心功能和Markdown的语法。 深受Obsidian的魅力影响，部分朋友也希望尝试使用 Obsidian 进行笔记记录和知识管理。但是，他们可能会觉得 Obsidian 的功能太多，或者不知从何入手。 因此，我决定写一篇详细的教程，作为新手的Obsidian之旅的起点，手把手带你完成从下载安装到初步组织笔记的关键步骤，包括一些非常实用的基础设置、以及如何利用文件夹和标签让你的知识库井井有条。 1 安装 Obsidian踏出探索 Obsidian 的第一步，自然是下载和安装。 Obsidian 的安装非常简单，你只需要访问 Obsidian 官网 下载适合你操作系统的版本（Windows、macOS 或 Linux），然后按照安装向导进行操作即可。   Obsidian 支持 Windows、macOS 和 Linux...</div></div></div></a><a class="pagination-related" href="/2025/08/17/notes-20250817-155702/" title="Obsidian完全入门之四： 模板-简化你的写作流程（保姆级教程）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-17</div><div class="info-item-2">Obsidian完全入门之四： 模板-简化你的写作流程（保姆级教程）</div></div><div class="info-2"><div class="info-item-1">Obsidian完全入门之四： 模板-简化你的笔记创建（保姆级教程）1. 前期回顾当我写上一篇文稿[[03_Obsidian 完全入门：从下载安装到高效笔记组织（新手保姆级教程）]]时，已经介绍了 Obsidian 的基本概念和使用方法，包括如何安装、创建笔记、组织笔记等内容。 Obsidian 的强大之处在于它的灵活性和可扩展性。对于新手来说，有时候会望而却步，甚至会认为这是程序员的笔记系统。 但实际上，Obsidian 非常适合任何需要记录笔记，搭建知识库的人。特别是AI时代，Obsidian 的优势更为明显。我们在一个信息过载的时代，如何有效地管理和利用这些信息，是每个人都需要面对的挑战。 我没想到那篇文章会真的帮到那么多人，不仅让很多人开始了解Obsidian，引发了他们的兴趣，也帮助了不少人开始尝试使用Obsidian。 所以，我今天想继续探讨Obsidian的一个非常实用的功能——模板。 2. Obsidian 核心插件-模板2.1...</div></div></div></a><a class="pagination-related" href="/2025/08/17/notes-20250817-155749/" title="Obsidian完全入门之五： 一定要频繁的记录自己，Obsidian日记助你一臂之力"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-17</div><div class="info-item-2">Obsidian完全入门之五： 一定要频繁的记录自己，Obsidian日记助你一臂之力</div></div><div class="info-2"><div class="info-item-1">Obsidian完全入门之五： 一定要频繁的记录自己，Obsidian日记助你一臂之力  1 一定要频繁地记录自己大家有没有觉得，比起小时候，时间似乎过得很快了？每天我们都在忙忙碌碌，却又总觉得时间不够用。  做了好多事情，但似乎更多的事情在等着我们去完成。...</div></div></div></a><a class="pagination-related" href="/2025/08/17/notes-20250817-155803/" title="Obsidian完全入门之六：优质资源一键剪藏，还能利用AI定义笔记内容，知识库搭建少不了Obsidian Clipper"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-17</div><div class="info-item-2">Obsidian完全入门之六：优质资源一键剪藏，还能利用AI定义笔记内容，知识库搭建少不了Obsidian Clipper</div></div><div class="info-2"><div class="info-item-1"> ## 1 概要  我以前在使用印象笔记的时候，最喜欢的一个功能是网页剪藏。它可以让我轻松地将网页上的内容保存到我的笔记中。 然而，自从我转向使用Obsidian后，这个功能就一直是我心中的一个遗憾。因为Obsidian本身并没有提供类似的网页剪藏功能。 于是，我不得不使用其他方式来保存网页内容，比如手动复制粘贴，或者使用截图工具。 现在，我们身处于数字信息时代，每天更是会接触到大量的信息。虽然有点泛滥，但还是有很多值得收藏的优质资源。 比如，我在掘金上看技术博客，在公众号看情感文章，在知乎上看知识问答，甚至在小红书上看生活方式的分享，在油管B站看视频，很多内容对我都有帮助。 许多有价值无法立刻阅读的内容，就会被我遗忘在茫茫的信息海洋中。 因此，如何高效地收集、整理和保存这些优质资源，一直是我想要解决的问题。 直到Obsidian的网页剪藏插件出现，我简直是太兴奋了。因为它可以轻松地将这些优质资源保存到我的Obsidian知识库中。 2...</div></div></div></a><a class="pagination-related" href="/2025/08/17/notes-20250817-161855/" title="Obsidina完全入门之七：美化笔记的利器Callouts你了解吗？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-17</div><div class="info-item-2">Obsidina完全入门之七：美化笔记的利器Callouts你了解吗？</div></div><div class="info-2"><div class="info-item-1">1 前情回顾在[[02_使用Obisidian要会的Markdown语法]]中，我们已经介绍了Obsidian的Markdown语法。但Obsidian里面，还有一个特殊的callouts 标记。    在以上的案例中，我使用了2种callouts。你应该明白callouts是什么了。它就是可以折叠又可以展开的内容块。 2 callouts就是引用callouts其实就是引用块的升级版。之前我们用引用，都是通过&gt;来实现的。例如：  这是一个引用块。我很普通，你很难通过我的样子来确定我想传达的信息。  但是，普通的引用样式都一样，很难通过外观来区分不同的信息类型。于是，Obsidian引入了callouts。 callouts通过预定义的类型，例如warning，tip， note等类型实现了更丰富的功能的外观。通过不同的类型，你能更精准的传递callouts的信息。 callouts的使用很简单，就像使用引用一样。只需要在前面加上&gt;，然后加上[!callouts的类型]，就可以了。结合起来就是&gt; [!callouts的类型]...</div></div></div></a><a class="pagination-related" href="/2025/08/17/notes-20250817-162135/" title="Obsidian完全入门之八：链接，让你的知识库有机生长"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-17</div><div class="info-item-2">Obsidian完全入门之八：链接，让你的知识库有机生长</div></div><div class="info-2"><div class="info-item-1">Obsidian完全入门之八：链接-让你的知识库有机生长  1. 前情回顾我刚开始在Obsidian中写笔记的时候，其实并没有意识到链接的作用。我似乎就是插入了一些图片，或者创建了一些文本笔记。直到有一天，我无意中打开了图谱，才看到那些密密麻麻的链接和节点，才意识到Obsidian链接的强大之处。 我开始尝试在笔记中使用链接，创建了很多笔记之间的连接。随着时间的推移，我发现这些链接不仅仅是简单的文本，它们构成了一个复杂的网络，让我的知识库变得更加有机和生动。 Obsidian里的链接有很多种类型，包括内部链接、外部链接、标签链接等。对于初学者，似乎对这些链接的概念有些模糊，但实际上它们非常简单易用。今天，就用一篇文来介绍一下Obsidian的链接功能。 2. Obsidian 支持的链接类型在obsidian里面，如果你想在仓库内部链接笔记，通常它们被称为内部链接。 而如果你链接到了外部资源，例如网上的网页、图片或者其他文件，这些被称为外部链接。 除此之外，还有一种特殊的链接类型，称为嵌入链接，它允许你在一个笔记中嵌入另一个笔记的内容。 2.1...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Arina</div><div class="author-info-description">时光流转，光阴不驻，岁月如歌，点滴留痕.</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Ai%E5%A5%BD%E8%AE%B0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">2.1 Ai好记是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">2.2 如何使用？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%AC%94%E8%AE%B0"><span class="toc-number">3.</span> <span class="toc-text">2.3 创建新笔记</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%9C%A8Ai%E5%A5%BD%E8%AE%B0%E4%B8%AD%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0"><span class="toc-number"></span> <span class="toc-text">3 在Ai好记中整理笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%A4%A7%E7%BA%B2%E4%B8%8E%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="toc-number">1.</span> <span class="toc-text">3.1 大纲与思维导图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-AI%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text">3.2 AI总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E6%B2%89%E6%B5%B8%E5%BC%8F%E9%98%85%E8%AF%BB"><span class="toc-number">3.</span> <span class="toc-text">3.3 沉浸式阅读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E5%A4%84%E7%90%86%E7%AC%94%E8%AE%B0"><span class="toc-number">4.</span> <span class="toc-text">3.4 处理笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E9%AB%98%E4%BA%AE%E7%AC%94%E8%AE%B0"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 高亮笔记</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E5%AF%BC%E5%87%BA%E5%88%B0Obsidian"><span class="toc-number">5.</span> <span class="toc-text">3.5 导出到Obsidian</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%BB%93%E8%AF%AD"><span class="toc-number"></span> <span class="toc-text">4 结语</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%BA%8C/" title="Obsidian完全入门之二十二：AI好记让我笔记效率再次升级">Obsidian完全入门之二十二：AI好记让我笔记效率再次升级</a><time datetime="2025-09-24T12:11:37.164Z" title="发表于 2025-09-24 22:11:37">2025-09-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81%E4%B8%80/" title="Obsidian完全入门之二十一：门徒的修行，初学者指南">Obsidian完全入门之二十一：门徒的修行，初学者指南</a><time datetime="2025-09-24T10:00:19.335Z" title="发表于 2025-09-24 20:00:19">2025-09-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/24/notes-250924-Obsidian%E4%BA%8C%E5%8D%81/" title="Obsidian完全入门之二十：Obsidian与编程IDE，腾讯CodeBuddy果然是更接地气">Obsidian完全入门之二十：Obsidian与编程IDE，腾讯CodeBuddy果然是更接地气</a><time datetime="2025-09-24T09:59:57.638Z" title="发表于 2025-09-24 19:59:57">2025-09-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/09/notes-250909-Obsidian%E5%8D%81%E4%B9%9D/" title="Obsidian完全入门之十九：Obsidian与编程IDE的美丽邂逅">Obsidian完全入门之十九：Obsidian与编程IDE的美丽邂逅</a><time datetime="2025-09-09T11:55:14.497Z" title="发表于 2025-09-09 21:55:14">2025-09-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/09/life-250909-%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%9C%AC%E8%B4%A8%EF%BC%9A%E5%AD%A6%E4%B8%8E%E4%B9%A0/" title="学习的本质：学与习">学习的本质：学与习</a><time datetime="2025-09-09T11:54:49.475Z" title="发表于 2025-09-09 21:54:49">2025-09-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By Arina</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://waline-comments-zeta.vercel.app',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
